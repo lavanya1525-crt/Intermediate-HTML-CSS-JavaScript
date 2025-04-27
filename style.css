@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+.error-message {
+    color: #d9534f; /* Red color for errors */
+    font-size: 0.85em;
+    display: block; /* Ensure it takes its own line */
+    margin-top: 5px;
+    min-height: 1em; /* Reserve space even when empty */
+}
+
+/* Style for inputs with validation errors */
+input.error,
+textarea.error {
+    border-color: #d9534f; /* Red border */
+    background-color: #f2dede; /* Light red background */
+}
+
+/* Style to remove default browser validation tooltips */
+input:invalid,
+textarea:invalid {
+   box-shadow: none; /* Override browser's default invalid shadow */
+}
